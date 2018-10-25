@@ -12,5 +12,5 @@ $(document).ready(function(){
         $("#widthTempOption2").html($('#price-select option:selected').text());
         $(this).width($("#selectTagWidth2").width()); 
     });
-    $('#cash').selectpicker();
+
 });
