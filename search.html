@@ -115,7 +115,7 @@
 
             </div>
             <div class="col-3 content-right">
-                <div class="sale-user">
+                <div class="sale-user mt-2">
                     <form class="form-inline row ">
                         <div class="form-group col-8 p-0">
                             <i class="fas fa-user"></i>
@@ -162,10 +162,75 @@
                                 <option value="">b</option>
                             </select>
                         </div>
-
+                        
                         
                     </form>
                     
+                </div>
+
+                <div class="row my-3">
+                    <div class="col-4">
+                        <hr>
+                    </div>
+                    <div class="col-4">
+                        <h5>Hóa Đơn</h5>
+                    </div>
+                    <div class="col-4">
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="sale">
+                    <div class="form-group d-flex justify-content-between sum"><!--SUM-->
+                        <div class="form-label control-label">Tổng tiền hàng<span class="badge">3</span><!----></div>
+                        <div class="form-output form-control-static">900,000</div>
+                    </div>
+                    <div class="form-group d-flex justify-content-between discount"><!--DISCOUNT-->
+                        <div class="form-label control-label">Giảm giá</div>
+                        <button data-toggle="popover" data-placement="left" data-html="true" data-content="
+                            &#x3C;div class=&#x22;form-group d-flex justify-content-between discount-value&#x22;&#x3E;&#x3C;!--DISCOUNT-VALUE--&#x3E;
+                                &#x3C;div class=&#x22;form-label control-label&#x22;&#x3E;Gi&#x1EA3;m gi&#xE1;&#x3C;/div&#x3E;
+                                &#x3C;input type=&#x22;number&#x22; id=&#x22;discount-value&#x22;&#x3E;
+                                &#x3C;ul&#x3E;
+                                        &#x3C;li&#x3E;
+                                        &#x3C;input type=&#x22;radio&#x22; value=&#x22;1&#x22; name=&#x22;radio&#x22; id=&#x22;radio1&#x22;/&#x3E;
+                                        &#x3C;label for=&#x22;radio1&#x22;&#x3E;VND&#x3C;/label&#x3E;
+                                        &#x3C;/li&#x3E;
+                                        &#x3C;li&#x3E;
+                                        &#x3C;input type=&#x22;radio&#x22; value=&#x22;2&#x22; name=&#x22;radio&#x22; id=&#x22;radio2&#x22;/&#x3E;
+                                        &#x3C;label for=&#x22;radio2&#x22;&#x3E;%&#x3C;/label&#x3E;
+                                        &#x3C;/li&#x3E;
+                            
+                                &#x3C;/ul&#x3E;
+                            &#x3C;/div&#x3E;"><!--POPOVER SALE-->
+                            900.000
+                        </button>
+                    </div>
+                    <div class="form-group d-flex justify-content-between must-pay"><!--MUST PAY-->
+                        <div class="form-label control-label">Khách cần trả</div>
+                        <div class="form-output form-control-static text-highlight">900,000</div>
+                    </div>
+                    <div class="form-group d-flex justify-content-between real-pay"><!--PAY-->
+                        <div class="form-label control-label">Khách thanh toán</div>
+                    
+                        <div class="pay-credit">
+                            <button>
+                                <i class="far fa-credit-card"></i>
+                            </button>
+                            <input type="number">
+                        </div>
+                    </div>
+                    <div class="form-group d-flex justify-content-between excess-cash"><!--EXCESS CASS-->
+                        <div class="form-label control-label">Tiền thừa trả khách</div>
+                        <div class="form-output form-control-static">900,000</div>
+                        
+                    </div>
+                    
+                    <div class="form-note mt-5">
+                        
+                        <input type="text" placeholder="Ghi chú">
+                    </div>
+                    <button id="pay-btn" class="btn btn-success">Thanh Toán</button>
                 </div>
             </div>
         </div>

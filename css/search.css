@@ -3,6 +3,17 @@
     box-sizing: border-box;
     font-size: 15px;
 }
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+hr{
+    border-top: 3px solid rgba(0,0,0,.1);
+}
 a{
     text-decoration: none;
     color:white;
@@ -188,6 +199,7 @@ a:hover{
     padding:0px;
     border:none;
     outline:none;
+    background:transparent;
     
 }
 .customer button{
@@ -215,4 +227,147 @@ a:hover{
 #cash{
     width: 50px;
     padding:2px;
+}
+.badge{
+    display: inline-block;
+    min-width: 20px;
+    line-height: 1.4;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(225, 225, 225);
+    border-image: initial;
+    margin: 0px 5px;
+    border-radius: 2px;
+    padding: 0px 5px;
+}
+
+.discount-value ul {
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom:0px;
+}
+.discount-value li {
+    display: inline-block;
+    /* margin-right: 15px; */
+}
+.discount-value input {
+    visibility:hidden;
+    margin-right: -20px;
+}
+.discount-value label {
+    cursor: pointer;
+}
+.discount-value input:checked + label {
+    background: rgb(75, 172, 77);
+}
+.discount-value label:hover{
+    background: rgb(111, 111, 111);
+}
+.discount-value label{
+    min-width: 41px;
+    background-color: rgb(153, 153, 153);
+    height: 25px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0px 5px;
+    color: white;
+    transition:all 0.5s;
+}
+.popover{
+    max-width: 355px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-filter: blur(0.000001px);
+    height: 60px;
+    padding-top:10px;
+
+}
+.discount button{
+    border:none;
+    background:transparent;
+    outline:none;
+    border-bottom:1px solid black;
+    width:100px;
+    text-align: right;
+    padding-right:0px;
+}
+.discount button:active{
+    border-bottom:2px solid green;
+}
+#discount-value{
+    visibility:unset;
+    height: 100%;
+    margin-left: 20px;
+    max-width: 120px;
+    border:none;
+    margin-right:10px;
+    text-align: right;
+    border-bottom:1px solid lightgrey;
+
+}
+.must-pay .form-label{
+    font-weight: bold;
+}
+.must-pay .form-output{
+    font-size:20px;
+}
+.text-highlight{
+    color:#0090DA;
+    font-weight:bold;
+}
+.real-pay .pay-credit input{
+    text-align: right;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    width: 100px;
+    outline:none;
+}
+.real-pay .pay-credit button{
+    background: transparent;
+    border:none;
+    outline:none;
+  
+}
+.real-pay .pay-credit button i{
+    color:#0090DA;
+    font-size:25px;
+}
+.form-note{
+    border-bottom:1px solid lightgrey;
+    padding-bottom:2px;
+}
+.form-note:before{
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 13px;
+    color: #666666;
+    font-size: 11px;
+    color: #999999;
+    content: "\f303";
+  
+}
+.form-note input{
+    width: 95%;
+    
+    float: right;
+    border: none;
+    background:transparent;
+    outline:none;
+}
+.form-note:focus-within{
+    border-bottom:2px solid green;
+}
+#pay-btn{
+    width: 100%;
+    font-size: 20px;
+    height: 70px;
+    font-weight: bold;
+    margin-top:100px;
 }
