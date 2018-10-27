@@ -13,4 +13,9 @@ $(document).ready(function(){
         $(this).width($("#selectTagWidth2").width()); 
     });
     $('[data-toggle="popover"]').popover();
+    $(document).on('keydown', '#value-of-discount', function()
+    {
+        var value=$('#value-of-discount').val();
+        $('#btn-discount').html(value);
+    });
 });

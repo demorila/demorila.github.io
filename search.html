@@ -23,7 +23,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
    
-        <script src="script/search.js"></script>
+       
 
         <div class="header row">
             
@@ -111,10 +111,20 @@
         
         </div> <!--HEADER-->
         <div class="content row">
-            <div class="col-9 content-left">
 
+            <div class="col-9 content-left d-flex flex-column"><!--LEFT-->
+                <div class=" content-left-top">
+                    <div class="data-field"></div>
+                </div>
+                <div class=" content-left-bottom">
+                    <div class="product-info">
+
+                    </div>
+                </div>
             </div>
-            <div class="col-3 content-right">
+
+
+            <div class="col-3 content-right"><!--RIGHT-->
                 <div class="sale-user mt-2">
                     <form class="form-inline row ">
                         <div class="form-group col-8 p-0">
@@ -187,23 +197,27 @@
                     </div>
                     <div class="form-group d-flex justify-content-between discount"><!--DISCOUNT-->
                         <div class="form-label control-label">Giảm giá</div>
-                        <button data-toggle="popover" data-placement="left" data-html="true" data-content="
+                        <button id="btn-discount" data-toggle="popover" data-placement="left" data-html="true" data-content="
                             &#x3C;div class=&#x22;form-group d-flex justify-content-between discount-value&#x22;&#x3E;&#x3C;!--DISCOUNT-VALUE--&#x3E;
                                 &#x3C;div class=&#x22;form-label control-label&#x22;&#x3E;Gi&#x1EA3;m gi&#xE1;&#x3C;/div&#x3E;
-                                &#x3C;input type=&#x22;number&#x22; id=&#x22;discount-value&#x22;&#x3E;
+                                &#x3C;input type=&#x22;number&#x22; id=&#x22;value-of-discount&#x22;&#x3E;
                                 &#x3C;ul&#x3E;
                                         &#x3C;li&#x3E;
-                                        &#x3C;input type=&#x22;radio&#x22; value=&#x22;1&#x22; name=&#x22;radio&#x22; id=&#x22;radio1&#x22;/&#x3E;
-                                        &#x3C;label for=&#x22;radio1&#x22;&#x3E;VND&#x3C;/label&#x3E;
+                                        &#x3C;input type=&#x22;radio&#x22; value=&#x22;1&#x22; name=&#x22;radio&#x22; id=&#x22;VND&#x22;/&#x3E;
+                                        &#x3C;label for=&#x22;VND&#x22;&#x3E;VND&#x3C;/label&#x3E;
                                         &#x3C;/li&#x3E;
                                         &#x3C;li&#x3E;
-                                        &#x3C;input type=&#x22;radio&#x22; value=&#x22;2&#x22; name=&#x22;radio&#x22; id=&#x22;radio2&#x22;/&#x3E;
-                                        &#x3C;label for=&#x22;radio2&#x22;&#x3E;%&#x3C;/label&#x3E;
+                                        &#x3C;input type=&#x22;radio&#x22; value=&#x22;2&#x22; name=&#x22;radio&#x22; id=&#x22;Percent&#x22;/&#x3E;
+                                        &#x3C;label for=&#x22;Percent&#x22;&#x3E;%&#x3C;/label&#x3E;
                                         &#x3C;/li&#x3E;
                             
                                 &#x3C;/ul&#x3E;
-                            &#x3C;/div&#x3E;"><!--POPOVER SALE-->
+                            &#x3C;/div&#x3E;
+                            ">
+                            
+                            <!--POPOVER SALE-->
                             900.000
+
                         </button>
                     </div>
                     <div class="form-group d-flex justify-content-between must-pay"><!--MUST PAY-->
@@ -235,6 +249,6 @@
                 </div>
             </div>
         </div>
-
+        <script src="script/search.js"></script>
     </body>
 </html>

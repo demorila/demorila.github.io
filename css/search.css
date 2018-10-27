@@ -32,15 +32,18 @@ a:hover{
 .content{
     width:100%;
     /* height:42px; */
-    background-color: lightcyan;
+    background-color: #c1c1c1;
     /* padding:5px 12px; */
 }
 .content-left,.content-right{
     padding:0px;
 }
+.content-left{
+    padding-right: 10px;
+}
 .content-right{
     background-color: white;
-    height: 500px;
+    /* height: 500px; */
     padding:10px;
     
 }
@@ -294,7 +297,7 @@ a:hover{
 .discount button:active{
     border-bottom:2px solid green;
 }
-#discount-value{
+#value-of-discount{
     visibility:unset;
     height: 100%;
     margin-left: 20px;
@@ -303,7 +306,7 @@ a:hover{
     margin-right:10px;
     text-align: right;
     border-bottom:1px solid lightgrey;
-
+    outline:none;
 }
 .must-pay .form-label{
     font-weight: bold;
@@ -378,4 +381,23 @@ a:hover{
 .support i{
     font-size:10px;
     color:#666666;
+}
+.content-left-top,.content-left-bottom{
+    max-width: 100%;
+    height: 52%;
+    
+}
+.content-left-bottom{
+   margin-top:10px;
+   height: 45%;
+}
+.data-field{
+    background-color: white;
+    height: 100%;
+    width:100%;
+}
+.product-info{
+    height: 100%;
+    width:100%;
+    background-color: white;
 }
